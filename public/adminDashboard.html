@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/adminDashboard.css">
+<title>Admin Dashboard</title>
+</head>
+<body>
+    <!--------------------HEADER-------------------------->
+    <div class="header">
+        <img src="assets/csmslogo.png" alt="logo" style="height: 70px;">
+    <button class="logout-btn" onclick="logout()">Logout</button>
+    </div>    
+
+<!-----------------------COUNTER-------------------------->
+
+    <div class="stats">
+        <div class="card">
+            <h2 id="userCount">0</h2>
+            <p>Totoal Users</p>
+        </div>
+
+        <div class="card">
+            <h2 id="totalCount">0</h2>
+            <p>Totoal Complaints</p>
+        </div>
+
+        <div class="card">
+            <h2 id="pendingCount">0</h2>
+            <p>Pending</p>
+        </div>
+
+
+        <div class="card">
+            <h2 id="progressCount">0</h2>
+            <p>In Progress</p>
+        </div>
+
+        <div class="card">
+            <h2 id="resolvedCount">0</h2>
+            <p>Resolved</p>
+        </div>
+    </div>
+<!------------- COMPLAINTS ------------------->
+
+    <div class="wrapper">
+        <h2 class="section-title">All User Complaints</h2>
+
+        <div id="allComplaints"></div>
+    </div>
+ 
+
+    <script src="js/adminDashboard.js"></script>
+</body>
+</html>

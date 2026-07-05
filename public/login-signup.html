@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complaint Management System</title>
+
+    <link rel="stylesheet" href="css/login-signup.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Left Side -->
+
+    <div class="left-panel">
+
+        <div class="overlay">
+
+            <img
+                src="assets/hero imag.png"
+                alt="Illustration">
+            <h1>Complaint Management System</h1>
+
+            <p>
+                Manage complaints efficiently, track progress,<br>
+and resolve issues faster through a centralized system.
+            </p>
+
+        </div>
+
+    </div>
+
+    <!-- Right Side -->
+
+    <div class="right-panel">
+
+        <div class="form-box">
+
+            <h2 id="formTitle">Welcome Back</h2>
+
+            <p class="subtitle">
+                Please login to continue
+            </p>
+
+            <!-- Toggle Buttons -->
+
+            <div class="toggle-buttons">
+
+                <button
+                    id="loginTab"
+                    class="active"
+                    type="button">
+
+                    Sign In
+
+                </button>
+
+                <button
+                    id="signupTab"
+                    type="button">
+
+                    Register
+
+                </button>
+
+            </div>
+
+            <!-- LOGIN -->
+
+            <form
+                id="loginForm">
+
+                <div class="input-group">
+
+                    <i class="fa-solid fa-envelope"></i>
+
+                    <input
+                        type="email"
+                        id="loginEmail"
+                        placeholder="Email Address"
+                        required>
+
+                </div>
+
+                <div class="input-group">
+
+                    <i class="fa-solid fa-lock"></i>
+
+                    <input
+                        type="password"
+                        id="loginPassword"
+                        placeholder="Password"
+                        required>
+
+                </div>
+
+                <button
+                    class="submit-btn"
+                    type="submit">
+
+                    Sign In
+
+                </button>
+
+                <div
+                    id="loginMessage"
+                    class="form-message">
+
+                </div>
+
+            </form>
+
+            <!-- REGISTER -->
+
+            <form
+                id="signupForm"
+                class="hidden">
+
+                <div class="input-group">
+
+                    <i class="fa-solid fa-user"></i>
+
+                    <input
+                        type="text"
+                        id="name"
+                        placeholder="Full Name"
+                        required>
+
+                </div>
+
+                <div class="input-group">
+
+                    <i class="fa-solid fa-envelope"></i>
+
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder="Email Address"
+                        required>
+
+                </div>
+
+                <div class="input-group">
+
+                    <i class="fa-solid fa-lock"></i>
+
+                    <input
+                        type="password"
+                        id="password"
+                        placeholder="Password"
+                        required>
+
+                </div>
+
+                <div class="input-group">
+
+                    <i class="fa-solid fa-lock"></i>
+
+                    <input
+                        type="password"
+                        id="confirmPassword"
+                        placeholder="Confirm Password"
+                        required>
+
+                </div>
+
+                <button
+                    class="submit-btn"
+                    type="submit">
+
+                    Create Account
+
+                </button>
+
+                <div
+                    id="signupMessage"
+                    class="form-message">
+
+                </div>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="js/login-signup.js"></script>
+
+</body>
+</html>

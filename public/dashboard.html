@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/dashboard.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<title>User Dashboard</title>
+</head>
+<body>
+<!--------------------HEADER-------------------------->
+    <div class="header">
+        <img src="assets/csmslogo.png" alt="logo" style="height: 70px;">
+    <button class="logout-btn" onclick="logout()">Logout</button>
+    </div>    
+
+<!--------------------CARDS-------------------------->
+
+    <div class="stats">
+        <div class="card">
+            <h2 id="totalCount">0</h2>
+            <p>Total Complaints</p>
+        </div>
+
+        <div class="card">
+            <h2 id="progressCount">0</h2>
+            <p>In Progress</p>
+        </div>
+
+        <div class="card">
+            <h2 id="pendingCount">0</h2>
+            <p>Pending</p>
+        </div>
+
+        <div class="card">
+            <h2 id="resolvedCount">0</h2>
+            <p>Resolved</p>
+        </div>
+    </div>
+
+<!--------------------Main section-------------------------->
+
+    <div class="main-container">
+
+        <!--LEFT---- SIDE---FORM-->
+    
+    <div class="form-container">
+        <h2>Create New Complaint</h2>
+
+    <form id="taskForm">
+        <label>Complaint Title</label>
+        <input type="text" id="title" placeholder="Enter Complaint Title" required>
+
+        <label>Category</label>
+        <select id="category" required>
+            <option value="">Select Category</option>
+            <option value="Network">Network</option>
+            <option value="Electricity">Electricity</option>
+            <option value="Water Supply">Water Supply</option>
+            <option value="Hotel">Hotel</option>
+            <option value="Transport">Transport</option>
+            <option value="Administration">Administration</option>
+            <option value="Other">Other</option>
+        </select>
+
+        <label>Priority Level</label>
+        <select id="priority">
+            <option value="">Select Priority</option>
+
+            <option value="Low">Low</option>
+            <option value="Medium">Medium</option>
+            <option value="High">High</option>
+            <option value="Urgent">Urgent</option>
+        </select>
+
+        <label>Description</label>
+        <textarea id="description" rows="10" maxlength="25000" placeholder="Describe your complaint..." required></textarea>
+
+        <div class="counter">
+            <span id="charCount">0</span>/20000
+        </div>
+
+        <button type="submit" class="submit-btn">Submit Complaint</button>
+    </form>
+    </div>
+
+<!---------------------------RIGHT ---SIDE------COMPLAINTS--------------->
+
+    <div class="complaints-section">
+        <h2>My Complaint</h2>
+        <div id="tasks"></div>
+    </div>
+    </div>
+
+<!-------FOOTER SECTION----->
+<footer class="footer">
+    <div class="footer-container">
+
+        <div class="footer-col">
+            <div class="logo">
+                <!-- <span>🛡</span>
+                <h3>ComplaintCentral</h3> -->
+                <div><img src="assets/logos.png" alt="Logo" style="width: 15em;
+    margin-bottom: -25px;"></div>
+            </div>
+
+            <p>
+                The world's most trusted platform for professional dispute
+                resolution and transparent complaint tracking.
+            </p>
+
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+
+        <div class="footer-col">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Tracking</a></li>
+                <li><a href="#">Submit Complaint</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>Legal</h4>
+            <ul>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Security Policy</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>Contact</h4>
+
+            <div class="contact-item">
+                    123 IMSciences Hayatabad Peshawar
+            </div>
+
+            <div class="contact-item">
+                 +92 (300) 555-0123
+            </div>
+
+            <div class="contact-item">
+                 support@imscomplaint.pk
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2026 Aineemator. All rights reserved.</p>
+    </div>
+</footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="js/dashboard.js"></script>
+</body>
+</html>
