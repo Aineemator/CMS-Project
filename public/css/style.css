@@ -618,7 +618,7 @@ font-size:16px;
 @media(max-width:480px){
 
 .logo{
-max-width:180px;
+max-width:160px;
 }
 
 .hero{
@@ -637,6 +637,9 @@ width:100%;
 display:none;
 }
 
+.nav-btns{
+    display: none;
+}
 }
 
    /* =========================

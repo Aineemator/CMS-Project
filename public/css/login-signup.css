@@ -563,7 +563,7 @@ input::placeholder{
 .left-panel{
 
     width:100%;
-
+    display: none;
     padding:40px 25px;
 
 }
